@@ -1,0 +1,17 @@
+{
+  "type": "Point",
+  "metric": "http_req_duration",
+  "data": {
+    "time": "2017-06-02T23:10:29.52444541+02:00",
+    "value": 586.831127,
+    "tags": {
+      "expected_response": "true",
+      "group": "",
+      "method": "GET",
+      "name": "http://127.0.0.1:4000/signin",
+      "scenario": "default",
+      "status": "200",
+      "url": "http://127.0.0.1:4000/signin"
+    }
+  }
+}
