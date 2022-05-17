@@ -2,7 +2,7 @@ import http from 'k6/http';
 import { sleep, check } from 'k6'
 
 export const options = {
-    vus: 10,
+    vus: 100,
     duration: '15s'
     /*
     * When user make a requrest, the duration timer is started, 
@@ -11,7 +11,7 @@ export const options = {
 }
 
 export default function () {
-    const url = 'http://127.0.0.1:4000/signin';
+    const url = 'http://127.0.0.1:3000/v1/signin';
     const body = JSON.stringify({
         user: {
             email: "bennisondevadoss@gmail.com",
@@ -34,5 +34,4 @@ export default function () {
     the sleep function suspends that virtual users for five seconds, 
     Once the five seconds are completed, then the sleep function allows the virtual users to make a request again */
 }
-
 /* here we use http.post method */
