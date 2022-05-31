@@ -16,3 +16,5 @@ group('list posts', function () {
         }
     });
 });
+
+// this will give the error
